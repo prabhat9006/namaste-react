@@ -1,3 +1,4 @@
+import Projects from "../Project/Projects";
 import Body from "./Body";
 import BodyFood from "./BodyFood";
 import Header from "./Header";

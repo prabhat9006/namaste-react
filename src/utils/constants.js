@@ -7,6 +7,9 @@ export const IMG_CDN_URL =
 export const FETCH_MENU_URL =
   "https://www.swiggy.com/dapi/menu/v4/full?lat=12.9351929&lng=77.62448069999999&menuId=";
 
+export const CINEMATE_LOGO_URL =
+  "https://img.freepik.com/premium-vector/movie-cinema-premiere-background_41737-251.jpg?w=826";
+
 export const restaurantList = [
   {
     type: "restaurant",

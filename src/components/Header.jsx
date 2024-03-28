@@ -23,6 +23,9 @@ const Header = () => {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
+          <li>
+            <Link to="/projects">Projects</Link>{" "}
+          </li>
           <button type="button" onClick={handleBtn}>
             {btnName}
           </button>

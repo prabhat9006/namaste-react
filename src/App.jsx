@@ -7,6 +7,12 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Body from "./components/Body";
+import Projects from "./Project/Projects";
+import TaskMate from "./Project/TaskMate/TaskMate";
+import CineMate from "./Project/CineMate/CineMate";
+import Calculator from "./Project/Calculator/Calculator";
+import Counter from "./Project/Counter/Counter";
+
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +36,28 @@ const appRouter = createBrowserRouter([
       },
     ],
     errorElement: <Error />,
+  },
+  {
+    path: "/projects",
+    element: <Projects />,
+    children: [
+      {
+        path: "/projects/taskmate",
+        element: <TaskMate />,
+      },
+      {
+        path: "/projects/cinemate",
+        element: <CineMate />,
+      },
+      {
+        path: "/projects/calculator",
+        element: <Calculator />,
+      },
+      {
+        path: "/projects/counter",
+        element: <Counter />,
+      },
+    ],
   },
 ]);
 
