@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from "react";
 
 const Counter = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(5);
   let timer;
   const handleStart = () => {
-    setCount(count + 1);
-    // setIsActive(true)
+    setCount(count - 1);
   };
 
   const handleStop = () => {
     clearTimeout(timer);
   };
   const handlereset = () => {
-    setCount(0);
+    setCount(30);
     clearTimeout(timer);
   };
   useEffect(() => {
