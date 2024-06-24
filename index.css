@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+.progress-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  border: 1px solid #333;
+  height: 30px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.3s ease-in-out;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
 .dropdown {
   background-color: #f9f9f9;
   min-width: 160px;

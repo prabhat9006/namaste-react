@@ -19,6 +19,9 @@ const Projects = () => {
           <li>
             <Link to="/projects/counter">Counter</Link>
           </li>
+          <li>
+            <Link to="/projects/progressbar">ProgressBar</Link>
+          </li>
         </ul>
       </div>
       <Outlet />

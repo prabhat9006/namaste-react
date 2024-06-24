@@ -1,7 +1,16 @@
 import React, { useEffect, useState } from "react";
 
 const Counter = () => {
-  const [count, setCount] = useState(5);
+  var [date, setDate] = useState(new Date());
+
+  useEffect(() => {
+    var timer = setInterval(() => setDate(new Date()), 1000);
+    return function cleanup() {
+      clearInterval(timer);
+    };
+  });
+
+  const [count, setCount] = useState(30);
   let timer;
   const handleStart = () => {
     setCount(count - 1);
@@ -22,6 +31,9 @@ const Counter = () => {
 
   return (
     <div className="App">
+      <>
+        <p> Time : {date.toLocaleTimeString()}</p>
+      </>
       <h1>Let's start the counter</h1>
       <h3>{count}</h3>
       <button onClick={handleStart} className="btn-cal">

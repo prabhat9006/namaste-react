@@ -12,6 +12,7 @@ import TaskMate from "./Project/TaskMate/TaskMate";
 import CineMate from "./Project/CineMate/CineMate";
 import Calculator from "./Project/Calculator/Calculator";
 import Counter from "./Project/Counter/Counter";
+import ProgressBar from "./Project/ProgressBar/ProgressBar";
 
 const appRouter = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/projects/counter",
         element: <Counter />,
+      },
+      {
+        path: "/projects/progressbar",
+        element: <ProgressBar />,
       },
     ],
   },
